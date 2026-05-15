@@ -1,6 +1,6 @@
 {
-    "name": "biblioul",
-    "short_name": "biblioul",
+    "name": "hello_world",
+    "short_name": "hello_world",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "username": "jdoe",
+    "password": "123456",
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "jdoe@example.com",
+    "reset_key": null,
+    "status": true,
+    "activation_key": "ACT123",
+    "birth_date": "1990-05-15T00:00:00.000",
+    "profile_picture": "https://example.com/profiles/jdoe.jpg",
+    "sex": {
+      "id": 1,
+      "name": "Male"
+    },
+    "nationality": {
+      "id": 1,
+      "demonym": "American"
+    }
+  },
+  {
+    "id": 2,
+    "username": "mgarcia",
+    "password": "password",
+    "first_name": "Maria",
+    "last_name": "Garcia",
+    "email": "mgarcia@example.com",
+    "reset_key": null,
+    "status": true,
+    "activation_key": "ACT456",
+    "birth_date": "1995-08-21T00:00:00.000",
+    "profile_picture": "https://example.com/profiles/mgarcia.jpg",
+    "sex": {
+      "id": 2,
+      "name": "Female"
+    },
+    "nationality": {
+      "id": 2,
+      "demonym": "Spanish"
+    }
+  },
+  {
+    "id": 3,
+    "username": "csmith",
+    "password": "qwerty",
+    "first_name": "Chris",
+    "last_name": "Smith",
+    "email": "csmith@example.com",
+    "reset_key": "RST789",
+    "status": false,
+    "activation_key": null,
+    "birth_date": "1988-11-03T00:00:00.000",
+    "profile_picture": null,
+    "sex": {
+      "id": 1,
+      "name": "Male"
+    },
+    "nationality": {
+      "id": 3,
+      "demonym": "Canadian"
+    }
+  },
+  {
+    "id": 4,
+    "username": "alopez",
+    "password": "abc123",
+    "first_name": "Ana",
+    "last_name": "Lopez",
+    "email": "alopez@example.com",
+    "reset_key": null,
+    "status": true,
+    "activation_key": "ACT999",
+    "birth_date": "1992-02-10T00:00:00.000",
+    "profile_picture": "https://example.com/profiles/alopez.jpg",
+    "sex": {
+      "id": 2,
+      "name": "Female"
+    },
+    "nationality": {
+      "id": 4,
+      "demonym": "Mexican"
+    }
+  },
+  {
+    "id": 5,
+    "username": "rpatel",
+    "password": "india2024",
+    "first_name": "Raj",
+    "last_name": "Patel",
+    "email": "rpatel@example.com",
+    "reset_key": null,
+    "status": true,
+    "activation_key": "ACT111",
+    "birth_date": "1997-06-30T00:00:00.000",
+    "profile_picture": null,
+    "sex": {
+      "id": 1,
+      "name": "Male"
+    },
+    "nationality": {
+      "id": 5,
+      "demonym": "Indian"
+    }
+  },
+  {
+    "id": 6,
+    "username": "lwilson",
+    "password": "securepass",
+    "first_name": "Laura",
+    "last_name": "Wilson",
+    "email": "lwilson@example.com",
+    "reset_key": "RST222",
+    "status": false,
+    "activation_key": null,
+    "birth_date": "1985-12-01T00:00:00.000",
+    "profile_picture": "https://example.com/profiles/lwilson.jpg",
+    "sex": {
+      "id": 2,
+      "name": "Female"
+    },
+    "nationality": {
+      "id": 6,
+      "demonym": "British"
+    }
+  },
+  {
+    "id": 7,
+    "username": "tnguyen",
+    "password": "vietpass",
+    "first_name": "Thanh",
+    "last_name": "Nguyen",
+    "email": "tnguyen@example.com",
+    "reset_key": null,
+    "status": true,
+    "activation_key": "ACT777",
+    "birth_date": "1993-09-14T00:00:00.000",
+    "profile_picture": null,
+    "sex": {
+      "id": 1,
+      "name": "Male"
+    },
+    "nationality": {
+      "id": 7,
+      "demonym": "Vietnamese"
+    }
+  },
+  {
+    "id": 8,
+    "username": "fmartin",
+    "password": "france123",
+    "first_name": "Sophie",
+    "last_name": "Martin",
+    "email": "fmartin@example.com",
+    "reset_key": null,
+    "status": true,
+    "activation_key": "ACT333",
+    "birth_date": "1991-04-18T00:00:00.000",
+    "profile_picture": "https://example.com/profiles/fmartin.jpg",
+    "sex": {
+      "id": 2,
+      "name": "Female"
+    },
+    "nationality": {
+      "id": 8,
+      "demonym": "French"
+    }
+  },
+  {
+    "id": 9,
+    "username": "jkim",
+    "password": "korea2025",
+    "first_name": "Jiho",
+    "last_name": "Kim",
+    "email": "jkim@example.com",
+    "reset_key": null,
+    "status": false,
+    "activation_key": "ACT555",
+    "birth_date": "1999-01-25T00:00:00.000",
+    "profile_picture": null,
+    "sex": {
+      "id": 1,
+      "name": "Male"
+    },
+    "nationality": {
+      "id": 9,
+      "demonym": "Korean"
+    }
+  },
+  {
+    "id": 10,
+    "username": "eperez",
+    "password": "peru456",
+    "first_name": "Elena",
+    "last_name": "Perez",
+    "email": "eperez@example.com",
+    "reset_key": null,
+    "status": true,
+    "activation_key": "ACT888",
+    "birth_date": "1996-07-09T00:00:00.000",
+    "profile_picture": "https://example.com/profiles/eperez.jpg",
+    "sex": {
+      "id": 2,
+      "name": "Female"
+    },
+    "nationality": {
+      "id": 10,
+      "demonym": "Peruvian"
+    }
+  }
+]

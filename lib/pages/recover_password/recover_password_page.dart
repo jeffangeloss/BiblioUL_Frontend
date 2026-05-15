@@ -1,4 +1,6 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, must_be_immutable, deprecated_member_use
+// lib/pages/recover_password/recover_password_page.dart
+import 'dart:html';
+
 import 'package:biblioul/components/login_header.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -112,6 +114,7 @@ class RecoverPasswordPage extends StatelessWidget {
               ),
             ),
           ),
+          _backButton(context),
         ],
       ),
     );
@@ -125,6 +128,21 @@ class RecoverPasswordPage extends StatelessWidget {
   )
 
    */
+
+  Widget _backButton(BuildContext context) {
+    return Positioned(
+      top: 16,
+      left: 16,
+      child: SafeArea(
+        child: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {

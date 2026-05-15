@@ -1,4 +1,5 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// lib/pages/sign_in/sign_in_page.dart
+import 'dart:html';
 
 import 'package:biblioul/components/login_header.dart';
 import 'package:flutter/material.dart';
@@ -28,6 +29,7 @@ class SignInPage extends StatelessWidget {
             height: 10,
           ),
           TextField(
+            controller: control.username,
             decoration: InputDecoration(
               hintText: 'Usuario',
               prefixIcon: Icon(Icons.person),
@@ -35,6 +37,7 @@ class SignInPage extends StatelessWidget {
             ),
           ),
           TextField(
+            controller: control.password,
             obscureText: true,
             decoration: InputDecoration(
               hintText: 'Contraseña',
@@ -42,16 +45,28 @@ class SignInPage extends StatelessWidget {
               border: UnderlineInputBorder(),
             ),
           ),
-          SizedBox(height: 10),
-          Text(
-            'Usuario y contraseña no válidos',
-            style: TextStyle(color: Colors.red),
-          ),
-          SizedBox(height: 10),
+          Obx(() => Column(
+                children: [
+                  SizedBox(height: control.message.value == '' ? 0 : 10),
+                  Text(
+                    control.message.value,
+                    style: TextStyle(color: control.messageColor.value),
+                  ),
+                  SizedBox(height: control.message.value == '' ? 0 : 10),
+                ],
+              )),
+          /*Text(
+              'Usuario y contreseña no valido'
+              style: TextStyle(color: Colors.red),
+            ),*/
+
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                print('hola en la vista');
+                control.login();
+              },
               style: ElevatedButton.styleFrom(
                 backgroundColor: colors.secondary,
                 foregroundColor: colors.surface,
@@ -76,7 +91,7 @@ class SignInPage extends StatelessWidget {
               ),
               InkWell(
                 onTap: () {
-                  print('Ir a registro');
+                  control.goToSignUp(context);
                 },
                 child: Text(
                   'Creala aquí',
@@ -103,7 +118,7 @@ class SignInPage extends StatelessWidget {
         ),
         InkWell(
           onTap: () {
-            print('Ir a recuperar contraseña');
+            control.goToRecoverPassword(context);
           },
           child: Text(
             'Recuperala aquí',
@@ -176,6 +191,8 @@ class SignInPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    control.context = context;
+
     return MaterialApp(
       home: Scaffold(
         resizeToAvoidBottomInset: false,

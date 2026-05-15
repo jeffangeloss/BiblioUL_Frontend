@@ -1,6 +1,8 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, must_be_immutable, deprecated_member_use
-
 // lib/pages/sign_up/sign_up_page.dart
+
+import 'package:biblioul/components/login_header.dart';
+// lib/pages/sign_up/sign_up_page.dart
+
 import 'package:biblioul/components/login_header.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -14,28 +16,26 @@ class SignUpPage extends StatelessWidget {
   Widget _form(BuildContext context, ColorScheme colors) {
     return Container(
       width: MediaQuery.of(context).size.width * 0.8,
-      padding: EdgeInsets.all(16),
+      padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: colors.background, // El color va aquí dentro
+        color: colors.background,
         border: Border.all(
           width: 1,
-          color: Colors.grey, // Color del borde
+          color: Colors.grey,
         ),
       ),
       child: Column(
         children: [
-          Text('CREAR CUENTA'),
-          SizedBox(
-            height: 10,
-          ),
-          TextField(
+          const Text('CREAR CUENTA'),
+          const SizedBox(height: 10),
+          const TextField(
             decoration: InputDecoration(
               hintText: 'Usuario',
               prefixIcon: Icon(Icons.person),
               border: UnderlineInputBorder(),
             ),
           ),
-          TextField(
+          const TextField(
             obscureText: true,
             decoration: InputDecoration(
               hintText: 'Contraseña',
@@ -43,7 +43,7 @@ class SignUpPage extends StatelessWidget {
               border: UnderlineInputBorder(),
             ),
           ),
-          TextField(
+          const TextField(
             obscureText: true,
             decoration: InputDecoration(
               hintText: 'Repetir Contraseña',
@@ -51,7 +51,7 @@ class SignUpPage extends StatelessWidget {
               border: UnderlineInputBorder(),
             ),
           ),
-          TextField(
+          const TextField(
             keyboardType: TextInputType.emailAddress,
             decoration: InputDecoration(
               hintText: 'Correo',
@@ -59,12 +59,12 @@ class SignUpPage extends StatelessWidget {
               border: UnderlineInputBorder(),
             ),
           ),
-          SizedBox(height: 10),
-          Text(
+          const SizedBox(height: 10),
+          const Text(
             'Usuario y contraseña no válidos',
             style: TextStyle(color: Colors.red),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
@@ -72,18 +72,18 @@ class SignUpPage extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 backgroundColor: colors.secondary,
                 foregroundColor: colors.surface,
-                padding: EdgeInsets.symmetric(vertical: 20),
-                shape: RoundedRectangleBorder(
+                padding: const EdgeInsets.symmetric(vertical: 20),
+                shape: const RoundedRectangleBorder(
                   borderRadius: BorderRadius.zero,
                 ),
               ),
-              child: Text(
+              child: const Text(
                 'CREAR CUENTA',
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
         ],
       ),
     );
@@ -92,29 +92,41 @@ class SignUpPage extends StatelessWidget {
   Widget _background(BuildContext context, ColorScheme colors) {
     return Column(
       children: [
-        // 30% superior
         Expanded(
-          flex: 5, // 30%
+          flex: 5,
           child: Container(
             width: double.infinity,
-            color: colors.tertiaryContainer, // puedes cambiar color
+            color: colors.tertiaryContainer,
           ),
         ),
-
-        // 70% inferior
         Expanded(
-          flex: 5, // 70%
+          flex: 5,
           child: Container(
             width: double.infinity,
-            color: colors.surfaceContainerHighest, // otro color
+            color: colors.surfaceContainerHighest,
           ),
         ),
       ],
     );
   }
 
+  Widget _backButton(BuildContext context) {
+    return Positioned(
+      top: 16,
+      left: 16,
+      child: SafeArea(
+        child: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+      ),
+    );
+  }
+
   Widget _buildBody(BuildContext context) {
-    ColorScheme colors = Theme.of(context).colorScheme;
+    final ColorScheme colors = Theme.of(context).colorScheme;
 
     return SafeArea(
       child: Stack(
@@ -132,33 +144,22 @@ class SignUpPage extends StatelessWidget {
                     children: [LoginHeader()],
                   ),
                   _form(context, colors),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                 ],
               ),
             ),
           ),
+          _backButton(context),
         ],
       ),
     );
   }
 
-  /*
-  Column(
-    children:[
-      SafeArea...
-    ]
-  )
-
-   */
-
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        resizeToAvoidBottomInset: false,
-        appBar: null,
-        body: _buildBody(context),
-      ),
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
+      body: _buildBody(context),
     );
   }
 }

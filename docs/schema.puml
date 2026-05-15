@@ -1,0 +1,115 @@
+@startuml
+!define table(name) class name << (T,#FFAAAA) >>
+!define primary_key(x) <b><u>x</u></b>
+!define foreign_key(x) <color:blue><u>x</u></color>
+
+table(users) {
+  * primary_key(id) : bigint
+  --
+  username: varchar(40)
+  password: varchar(90)
+  first_name : varchar(100)
+  last_name : varchar(100)
+  email : varchar(255)
+  reset_key: varchar(50)
+  status: boolean
+  activation_key: varchar(50)
+  birth_date : date
+  profile_picture : text
+  sex_id : bigint
+  nationality_id : bigint
+}
+
+table(sexs) {
+  * primary_key(id) : bigint
+  --
+  name : varchar(20)
+}
+
+table(nationalities) {
+  * primary_key(id) : bigint
+  --
+  demonym : varchar(100)
+}
+
+table(devices) {
+  * primary_key(id) : bigint
+  --
+  brand : varchar(100)
+  device_type_id : bigint
+  user_id : bigint
+}
+
+table(device_types) {
+  * primary_key(id) : bigint
+  --
+  name : varchar(50)
+}
+
+table(books) {
+  * primary_key(id) : bigint
+  --
+  title : varchar(255)
+  isbn : varchar(20)
+  pages : int
+  publication_year : int
+  edition_year : int
+  synopsis : varchar(300)
+  cover_image : varchar(100)
+  pdf_url: varchar(100)
+  publisher_id : bigint
+}
+
+table(publishers) {
+  * primary_key(id) : bigint
+  --
+  name : varchar(255)
+  logo : text
+}
+
+table(genres) {
+  * primary_key(id) : bigint
+  --
+  name : varchar(100)
+}
+
+table(authors) {
+  * primary_key(id) : bigint
+  --
+  full_name : varchar(255)
+  birth_date : date
+  picture : text
+}
+
+table(reviews) {
+  * primary_key(id) : bigint
+  --
+  rating : smallint
+  comment : text
+  review_date : timestamp
+  user_id : bigint
+  book_id : bigint
+}
+
+table(books_genres) {
+  * primary_key(book_id) : bigint
+  * primary_key(genre_id) : bigint
+}
+
+table(books_authors) {
+  * primary_key(book_id) : bigint
+  * primary_key(author_id) : bigint
+}
+
+users ||--o{ devices : "user_id"
+users }o--|| sexs : "sex_id"
+users }o--|| nationalities : "nationality_id"
+devices }o--|| device_types : "device_type_id"
+books }o--|| publishers : "publisher_id"
+reviews }o--|| users : "user_id"
+reviews }o--|| books : "book_id"
+books_genres }o--|| books : "book_id"
+books_genres }o--|| genres : "genre_id"
+books_authors }o--|| books : "book_id"
+books_authors }o--|| authors : "author_id"
+@enduml

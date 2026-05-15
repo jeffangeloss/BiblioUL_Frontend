@@ -1,0 +1,292 @@
+[
+  {
+    "id": 1,
+    "title": "Cien años de soledad",
+    "isbn": "9780307474728",
+    "pages": 417,
+    "publication_year": 1967,
+    "edition_year": 2007,
+    "synopsis": "La historia de la familia Buendía en el pueblo de Macondo.",
+    "cover_image": "https://example.com/covers/cien_anos_de_soledad.png",
+    "pdf_url": "https://example.com/pdfs/cien_anos_de_soledad.pdf",
+    "publisher": {
+      "id": 1,
+      "name": "Penguin Random House",
+      "logo": "https://example.com/logos/penguin_random_house.png"
+    },
+    "authors": [
+      {
+        "id": 1,
+        "full_name": "Gabriel García Márquez",
+        "birth_date": "1927-03-06",
+        "picture": "https://example.com/authors/gabriel_garcia_marquez.png"
+      }
+    ],
+    "genres": [
+      { "id": 1, "name": "Ficción" },
+      { "id": 3, "name": "Fantasía" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "El Aleph",
+    "isbn": "9780307950900",
+    "pages": 224,
+    "publication_year": 1949,
+    "edition_year": 2011,
+    "synopsis": "Relatos que exploran lo infinito y lo metafísico.",
+    "cover_image": "https://example.com/covers/el_aleph.png",
+    "pdf_url": "https://example.com/pdfs/el_aleph.pdf",
+    "publisher": {
+      "id": 2,
+      "name": "HarperCollins",
+      "logo": "https://example.com/logos/harpercollins.png"
+    },
+    "authors": [
+      {
+        "id": 2,
+        "full_name": "Jorge Luis Borges",
+        "birth_date": "1899-08-24",
+        "picture": "https://example.com/authors/jorge_luis_borges.png"
+      }
+    ],
+    "genres": [
+      { "id": 1, "name": "Ficción" },
+      { "id": 4, "name": "Misterio" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Rayuela",
+    "isbn": "9788437604947",
+    "pages": 635,
+    "publication_year": 1963,
+    "edition_year": 2010,
+    "synopsis": "Novela experimental sobre el amor y la búsqueda existencial.",
+    "cover_image": "https://example.com/covers/rayuela.png",
+    "pdf_url": "https://example.com/pdfs/rayuela.pdf",
+    "publisher": {
+      "id": 2,
+      "name": "HarperCollins",
+      "logo": "https://example.com/logos/harpercollins.png"
+    },
+    "authors": [
+      {
+        "id": 3,
+        "full_name": "Isabel Allende",
+        "birth_date": "1942-08-02",
+        "picture": "https://example.com/authors/isabel_allende.png"
+      },
+      {
+        "id": 2,
+        "full_name": "Jorge Luis Borges",
+        "birth_date": "1899-08-24",
+        "picture": "https://example.com/authors/jorge_luis_borges.png"
+      }
+    ],
+    "genres": [
+      { "id": 1, "name": "Ficción" },
+      { "id": 10, "name": "Poesía" },
+      { "id": 3, "name": "Fantasía" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "La casa de los espíritus",
+    "isbn": "9780553383805",
+    "pages": 433,
+    "publication_year": 1982,
+    "edition_year": 2005,
+    "synopsis": "Saga familiar con elementos de realismo mágico.",
+    "cover_image": "https://example.com/covers/la_casa_de_los_espiritus.png",
+    "pdf_url": "https://example.com/pdfs/la_casa_de_los_espiritus.pdf",
+    "publisher": {
+      "id": 3,
+      "name": "Simon & Schuster",
+      "logo": "https://example.com/logos/simon_schuster.png"
+    },
+    "authors": [
+      {
+        "id": 3,
+        "full_name": "Isabel Allende",
+        "birth_date": "1942-08-02",
+        "picture": "https://example.com/authors/isabel_allende.png"
+      }
+    ],
+    "genres": [
+      { "id": 1, "name": "Ficción" },
+      { "id": 3, "name": "Fantasía" },
+      { "id": 2, "name": "Ciencia ficción" }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Kafka en la orilla",
+    "isbn": "9781400079278",
+    "pages": 505,
+    "publication_year": 2002,
+    "edition_year": 2015,
+    "synopsis": "Historia surrealista entre dos personajes entrelazados.",
+    "cover_image": "https://example.com/covers/kafka_en_la_orilla.png",
+    "pdf_url": "https://example.com/pdfs/kafka_en_la_orilla.pdf",
+    "publisher": {
+      "id": 4,
+      "name": "Macmillan Publishers",
+      "logo": "https://example.com/logos/macmillan.png"
+    },
+    "authors": [
+      {
+        "id": 4,
+        "full_name": "Haruki Murakami",
+        "birth_date": "1949-01-12",
+        "picture": "https://example.com/authors/haruki_murakami.png"
+      }
+    ],
+    "genres": [
+      { "id": 2, "name": "Ciencia ficción" },
+      { "id": 4, "name": "Misterio" },
+      { "id": 3, "name": "Fantasía" }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Orgullo y prejuicio",
+    "isbn": "9780141439518",
+    "pages": 279,
+    "publication_year": 1813,
+    "edition_year": 2003,
+    "synopsis": "Historia de amor y crítica social en la Inglaterra rural.",
+    "cover_image": "https://example.com/covers/orgullo_y_prejuicio.png",
+    "pdf_url": "https://example.com/pdfs/orgullo_y_prejuicio.pdf",
+    "publisher": {
+      "id": 5,
+      "name": "Hachette Livre",
+      "logo": "https://example.com/logos/hachette_livre.png"
+    },
+    "authors": [
+      {
+        "id": 5,
+        "full_name": "Jane Austen",
+        "birth_date": "1775-12-16",
+        "picture": "https://example.com/authors/jane_austen.png"
+      }
+    ],
+    "genres": [
+      { "id": 6, "name": "Romance" },
+      { "id": 1, "name": "Ficción" }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Ficciones",
+    "isbn": "9780141184845",
+    "pages": 174,
+    "publication_year": 1944,
+    "edition_year": 2000,
+    "synopsis": "Colección de relatos filosóficos y fantásticos.",
+    "cover_image": "https://example.com/covers/ficciones.png",
+    "pdf_url": "https://example.com/pdfs/ficciones.pdf",
+    "publisher": {
+      "id": 2,
+      "name": "HarperCollins",
+      "logo": "https://example.com/logos/harpercollins.png"
+    },
+    "authors": [
+      {
+        "id": 2,
+        "full_name": "Jorge Luis Borges",
+        "birth_date": "1899-08-24",
+        "picture": "https://example.com/authors/jorge_luis_borges.png"
+      }
+    ],
+    "genres": [
+      { "id": 1, "name": "Ficción" },
+      { "id": 4, "name": "Misterio" },
+      { "id": 10, "name": "Poesía" }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "El amor en los tiempos del cólera",
+    "isbn": "9780307389732",
+    "pages": 348,
+    "publication_year": 1985,
+    "edition_year": 2007,
+    "synopsis": "Una historia de amor que perdura décadas.",
+    "cover_image": "https://example.com/covers/el_amor_en_tiempos_del_colera.png",
+    "pdf_url": "https://example.com/pdfs/el_amor_en_tiempos_del_colera.pdf",
+    "publisher": {
+      "id": 1,
+      "name": "Penguin Random House",
+      "logo": "https://example.com/logos/penguin_random_house.png"
+    },
+    "authors": [
+      {
+        "id": 1,
+        "full_name": "Gabriel García Márquez",
+        "birth_date": "1927-03-06",
+        "picture": "https://example.com/authors/gabriel_garcia_marquez.png"
+      }
+    ],
+    "genres": [
+      { "id": 6, "name": "Romance" },
+      { "id": 1, "name": "Ficción" }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Norwegian Wood",
+    "isbn": "9780375704024",
+    "pages": 296,
+    "publication_year": 1987,
+    "edition_year": 2000,
+    "synopsis": "Historia nostálgica sobre amor y pérdida.",
+    "cover_image": "https://example.com/covers/norwegian_wood.png",
+    "pdf_url": "https://example.com/pdfs/norwegian_wood.pdf",
+    "publisher": {
+      "id": 4,
+      "name": "Macmillan Publishers",
+      "logo": "https://example.com/logos/macmillan.png"
+    },
+    "authors": [
+      {
+        "id": 4,
+        "full_name": "Haruki Murakami",
+        "birth_date": "1949-01-12",
+        "picture": "https://example.com/authors/haruki_murakami.png"
+      }
+    ],
+    "genres": [
+      { "id": 6, "name": "Romance" },
+      { "id": 5, "name": "Thriller" }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Emma",
+    "isbn": "9780141439587",
+    "pages": 474,
+    "publication_year": 1815,
+    "edition_year": 2005,
+    "synopsis": "Una joven intenta organizar la vida amorosa de otros.",
+    "cover_image": "https://example.com/covers/emma.png",
+    "pdf_url": "https://example.com/pdfs/emma.pdf",
+    "publisher": {
+      "id": 5,
+      "name": "Hachette Livre",
+      "logo": "https://example.com/logos/hachette_livre.png"
+    },
+    "authors": [
+      {
+        "id": 5,
+        "full_name": "Jane Austen",
+        "birth_date": "1775-12-16",
+        "picture": "https://example.com/authors/jane_austen.png"
+      }
+    ],
+    "genres": [
+      { "id": 6, "name": "Romance" },
+      { "id": 1, "name": "Ficción" }
+    ]
+  }
+]

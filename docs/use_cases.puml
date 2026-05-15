@@ -1,0 +1,34 @@
+@startuml
+left to right direction
+
+actor Usuario
+
+rectangle Sistema {
+  (Ingresar al sistema) as Login
+  (Cambiar contraseña) as ChangePassword
+  (Crear usuario) as CreateUser
+  (Editar perfil) as EditProfile
+  (Actualizar foto) as UpdatePhoto
+
+  (Listar libros) as ListBooks
+  (Filtrar libros) as FilterBooks
+  (Ver Detalle) as ViewDetail
+  (Leer) as ReadBook
+  (Comentar) as Comment
+}
+
+Usuario --> Login
+Usuario --> ChangePassword
+Usuario --> CreateUser
+Usuario --> EditProfile
+Usuario --> ListBooks
+
+' Relaciones extend
+UpdatePhoto ..> EditProfile : <<extend>>
+
+FilterBooks ..> ListBooks : <<extend>>
+ViewDetail ..> ListBooks : <<extend>>
+ReadBook ..> ListBooks : <<extend>>
+Comment ..> ListBooks : <<extend>>
+
+@enduml

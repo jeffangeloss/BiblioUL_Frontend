@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 class LoginHeader extends StatelessWidget {
-  LoginHeader({super.key});
+  LoginHeader();
 
   Widget _buildBody(BuildContext context) {
     return Column(

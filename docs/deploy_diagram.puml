@@ -1,0 +1,23 @@
+@startuml
+top to bottom direction
+skinparam nodeStyle rectangle
+
+node "Dispositivo Móvil\n(Android)" {
+  component "App Móvil\n(Flutter)"
+}
+
+node "Servidor Backend" {
+  component "API REST\n(Ruby Sinatra)"
+  database "SQLite3"
+}
+
+node "Servicios Externos" {
+  component "OpenStreetMap API"
+}
+
+' Relaciones
+"App Móvil\n(Flutter)" --> "API REST\n(Ruby Sinatra)" : HTTPS / JSON
+"API REST\n(Ruby Sinatra)" --> "SQLite3" : Consultas SQL
+"App Móvil\n(Flutter)" --> "OpenStreetMap API" : Solicitudes de mapas
+
+@enduml

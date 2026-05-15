@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Penguin Random House",
+    "logo": "https://example.com/logos/penguin_random_house.png"
+  },
+  {
+    "id": 2,
+    "name": "HarperCollins",
+    "logo": "https://example.com/logos/harpercollins.png"
+  },
+  {
+    "id": 3,
+    "name": "Simon & Schuster",
+    "logo": "https://example.com/logos/simon_schuster.png"
+  },
+  {
+    "id": 4,
+    "name": "Macmillan Publishers",
+    "logo": "https://example.com/logos/macmillan.png"
+  },
+  {
+    "id": 5,
+    "name": "Hachette Livre",
+    "logo": "https://example.com/logos/hachette_livre.png"
+  }
+]

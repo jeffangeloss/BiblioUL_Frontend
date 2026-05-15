@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'home_controller.dart';
+import '../search/search_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -16,9 +17,9 @@ class _HomePageState extends State<HomePage> {
   int _currentIndex = 0;
 
   final List<Widget> _pages = [
-    Center(child: Text('Buscar')),
-    Center(child: Text('Escanear QR')),
-    Center(child: Text('Favoritos')),
+    Center(child: SearchPage()), // index 0
+    Center(child: Text('Escanear QR')), // index 1
+    Center(child: Text('Favoritos')), // index 2
   ];
 
   Widget _buildBody() {
@@ -42,7 +43,6 @@ class _HomePageState extends State<HomePage> {
   AppBar _appBar(ColorScheme colors) {
     return AppBar(
       title: Text('BiblioApp ULima'),
-      centerTitle: false,
       backgroundColor: colors.primaryContainer,
       actions: [
         PopupMenuButton<String>(
@@ -84,7 +84,7 @@ class _HomePageState extends State<HomePage> {
           label: 'Escanear QR',
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.favorite),
+          icon: Icon(Icons.star),
           label: 'Favoritos',
         ),
       ],

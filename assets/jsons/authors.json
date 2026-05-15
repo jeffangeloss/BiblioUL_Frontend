@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "full_name": "Gabriel García Márquez",
+    "birth_date": "1927-03-06",
+    "picture": "https://example.com/authors/gabriel_garcia_marquez.png"
+  },
+  {
+    "id": 2,
+    "full_name": "Jorge Luis Borges",
+    "birth_date": "1899-08-24",
+    "picture": "https://example.com/authors/jorge_luis_borges.png"
+  },
+  {
+    "id": 3,
+    "full_name": "Isabel Allende",
+    "birth_date": "1942-08-02",
+    "picture": "https://example.com/authors/isabel_allende.png"
+  },
+  {
+    "id": 4,
+    "full_name": "Haruki Murakami",
+    "birth_date": "1949-01-12",
+    "picture": "https://example.com/authors/haruki_murakami.png"
+  },
+  {
+    "id": 5,
+    "full_name": "Jane Austen",
+    "birth_date": "1775-12-16",
+    "picture": "https://example.com/authors/jane_austen.png"
+  }
+]

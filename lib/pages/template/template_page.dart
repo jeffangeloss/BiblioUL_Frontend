@@ -3,12 +3,12 @@ import 'package:get/get.dart';
 import 'template_controller.dart';
 
 class TemplatePage extends StatelessWidget {
-  final TemplateController control = Get.put(TemplateController());
+  TemplateController control = Get.put(TemplateController());
 
   TemplatePage({super.key});
 
   Widget _buildBody(BuildContext context) {
-    return const SafeArea(child: Text('Template Page'));
+    return SafeArea(child: Text('Template Page'));
   }
 
   @override
