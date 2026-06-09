@@ -17,24 +17,22 @@ class Search2Controller extends GetxController {
   RxList<int> genresIdsSelected = <int>[].obs;
 
   void fetchAll() async {
-    GenericResponse response = await bookService.fetchAll();
-    books.value = response.data;
-    print(response.data);
+    GenericResponse<List<Book>> response = await bookService.fetchAll();
+    GenericResponse<List<Book>> responseV2 = await bookService.fetchAllV2();
+
+    books.assignAll(responseV2.data ?? response.data ?? <Book>[]);
   }
 
   void fetchAllGenres() async {
     GenericResponse response = await genreService.fetchAll();
     genres.value = response.data;
-
-    print(response.data);
   }
 
   void searchByGenresIds() async {
-    print('Tópicos seleccionados: ${genresIdsSelected}');
-    List<int> genresIds = genresIdsSelected.value;
-    if (!genresIds.isEmpty) {
-      GenericResponse response = await bookService.searchByGenresIds(genresIds);
-      books.value = response.data;
+    final genresIds = List<int>.from(genresIdsSelected);
+    if (genresIds.isNotEmpty) {
+      final response = await bookService.searchByGenresIds(genresIds);
+      books.assignAll(response.data ?? <Book>[]);
     } else {}
   }
 }

@@ -2,19 +2,19 @@
 class Publisher {
   final int id;
   final String name;
-  final String logo;
+  final String? logo;
 
   Publisher({
     required this.id,
     required this.name,
-    required this.logo,
+    this.logo,
   });
 
   factory Publisher.fromJson(Map<String, dynamic> json) {
     return Publisher(
       id: json['id'] as int,
       name: json['name'] as String,
-      logo: json['logo'] as String,
+      logo: json['logo'] as String?,
     );
   }
 

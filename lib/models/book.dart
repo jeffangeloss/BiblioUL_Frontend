@@ -13,7 +13,7 @@ class Book {
   final int editionYear;
   final String synopsis;
   final String coverImage;
-  final String pdfUrl;
+  final String? pdfUrl;
 
   final Publisher publisher;
   final List<Author> authors;
@@ -44,7 +44,7 @@ class Book {
       editionYear: json['edition_year'] as int,
       synopsis: json['synopsis'] as String,
       coverImage: json['cover_image'] as String,
-      pdfUrl: json['pdf_url'] as String,
+      pdfUrl: json['pdf_url'] as String?,
       publisher: Publisher.fromJson(
         json['publisher'] as Map<String, dynamic>,
       ),
