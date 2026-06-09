@@ -76,6 +76,21 @@ class Book {
 
   @override
   String toString() {
-    return 'Book(id: $id, title: $title, authors: ${authors.length}, genres: ${genres.length})';
+    return '''
+Book(
+  id: $id,
+  title: $title,
+  isbn: $isbn,
+  pages: $pages,
+  publicationYear: $publicationYear,
+  editionYear: $editionYear,
+  synopsis: $synopsis,
+  coverImage: $coverImage,
+  pdfUrl: $pdfUrl,
+  publisher: $publisher,
+  authors: ${authors.map((a) => a.toString()).join(', ')},
+  genres: ${genres.map((g) => g.toString()).join(', ')}
+)
+''';
   }
 }

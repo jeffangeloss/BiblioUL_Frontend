@@ -17,6 +17,7 @@ La base de datos es Sqlite3 y el esquema es el siguiente:
 
 ```sql
 PRAGMA foreign_keys = ON;
+
 -- Tabla sexs
 CREATE TABLE sexs (
     id INTEGER PRIMARY KEY,
@@ -135,4 +136,4 @@ CREATE TABLE books_authors (
 
 El diagrama es el siguiente:
 
-![Diagrama de base de datos](./docs/der.png) 
+![Diagrama de base de datos](./docs/der.png)

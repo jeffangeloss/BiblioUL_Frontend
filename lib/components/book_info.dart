@@ -4,11 +4,9 @@ import '../models/book.dart';
 
 class BookInfo extends StatelessWidget {
   final Book book;
+  final BuildContext context;
 
-  const BookInfo({
-    super.key,
-    required this.book,
-  });
+  const BookInfo({super.key, required this.book, required this.context});
 
   void _onMenuSelected(String value) {
     switch (value) {
@@ -16,7 +14,10 @@ class BookInfo extends StatelessWidget {
         print('detalle');
         break;
       case 'leer':
-        print('leer');
+        // enviar parámetro por parámetro
+        // Navigator.pushNamed(context, '/read-book', arguments: {'pdf_url': book.pdfUrl});
+        // enivar todo un objeto
+        Navigator.pushNamed(context, '/read-book', arguments: book);
         break;
       case 'comentarios':
         print('comentarios');

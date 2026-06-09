@@ -1,6 +1,9 @@
 // main.dart
 
+import 'dart:js';
+
 import 'package:biblioul/pages/home/home_page.dart';
+import 'package:biblioul/pages/read_book/read_book_page.dart';
 import 'package:biblioul/pages/recover_password/recover_password_page.dart';
 import 'package:biblioul/pages/sign_up/sign_up_page.dart';
 import 'package:biblioul/pages/template/template_page.dart';
@@ -32,6 +35,7 @@ class MyApp extends StatelessWidget {
           '/sign-up': (context) => SignUpPage(),
           '/recover-password': (context) => RecoverPasswordPage(),
           '/home': (context) => HomePage(),
+          '/read-book': (context) => ReadBookPage()
         },
         home: SignInPage());
   }
